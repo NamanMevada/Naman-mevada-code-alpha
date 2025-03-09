@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="images/pexels-eberhardgross-1366919.jpg" alt="Image 1" onclick="openLightbox(this)">
+        <img src="images/rachel-cook-mOcdke2ZQoE-unsplash.jpg" alt="Image 2" onclick="openLightbox(this)">
+        <img src="images/sunset-1373171_640.jpg" alt="Image 3" onclick="openLightbox(this)">
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
